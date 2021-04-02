@@ -14,23 +14,24 @@ public class Jugador2Controller : MonoBehaviour
     void FixedUpdate()
     {
          
-        float movHorizontal = Input.GetAxis("Horizontal");
-        float movVertical = Input.GetAxis("Vertical");
-       
-        Vector3 direcion = new Vector3(movHorizontal,0.0f,movVertical);
+        
         Vector3 pos = transform.position;
  
         if (Input.GetKey(KeyCode.A) ) { 
-              pos.x += 1;      
+              pos.x -= 1;   
+              transform.rotation = Quaternion.Euler(0,-90,0);    
         }
-        if (Input.GetKey(KeyCode.D) ) { 
-              pos.x -= 1;  
+        else if (Input.GetKey(KeyCode.D) ) { 
+              pos.x += 1;  
+              transform.rotation = Quaternion.Euler(0,90,0); 
         }
-        if (Input.GetKey(KeyCode.W) ) { 
-              pos.z += 1;      
+        else if (Input.GetKey(KeyCode.W) ) { 
+              pos.z += 1; 
+              transform.rotation = Quaternion.Euler(0,0,0);      
         }
-        if (Input.GetKey(KeyCode.S) ) { 
-              pos.z -= 1;  
+        else if (Input.GetKey(KeyCode.S) ) { 
+              pos.z -= 1;
+              transform.rotation = Quaternion.Euler(0,-180,0);   
         }
         transform.position = pos;
     }
