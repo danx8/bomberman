@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 13e73ebad025b6544843438c4de3f5ec
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - bomba: {instanceID: 0}
+  - jugador: {instanceID: 0}
+  - explosionPrefab: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

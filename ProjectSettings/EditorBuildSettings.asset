@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Botones.unity
+    guid: 12f151965960bdd41bd3fce12e01e8ad
+  - enabled: 1
+    path: Assets/Scenes/daniel2.unity
+    guid: 325808346deaf55409eef872696db824
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: aa92e2a7e7ac35346962a60e35dc0d4f
   m_configObjects: {}
